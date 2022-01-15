@@ -63,7 +63,13 @@ h2{
   .introduction{
       display: grid;
       grid-template-columns: repeat(2,1fr);
-      justify-items: end
+      justify-items: end;
+      overflow: hidden;
+  }
+
+  .introduction:hover .camera{
+      transform: scale(1.2);
+      transition: transform 2s ease-in-out;
   }
 
  
@@ -91,10 +97,123 @@ h2{
       margin-left: 10px;
   }
 
-  #camera{
+  .camera{
     position: absolute;
    
 }
+
+
+
+/* popular collection  */
+
+.popular-title{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.popular-title h3{
+
+    font-size: 26px;
+    border-bottom: 2px solid #E02C6D ;
+    display: inline-block;
+}
+
+
+
+.popular-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+
+}
+
+.popular-item{
+    width: 329px;
+    height: 476px;
+    box-shadow: 0 5px 5px -5px #333, -5px 0 5px -5px #333, 5px 0 5px -5px #333; 
+    border-radius: 10px; 
+    padding: 7px;
+}
+
+.popular-item .popular-image img{
+    width: 100%;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.fa-star.empty{
+    color:#AEAEAE;
+}
+
+.popular-paragraph{
+    color: rgb(112, 108, 112);
+}
+
+#see-more{
+    text-align: end;
+    margin: 20px;
+}
+
+#see-more a{
+    background-color: white;
+    color: #E02C6D;
+   
+    
+}
+
+/*===========
+ Footer-part
+  ============ */
+
+  .last-part{
+  
+    height: 239px;
+    background: #0A0826;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .footer-decoration{
+    width: 262px;
+    height: 139px;
+    margin: 0 auto;
+
+  }
+
+  .footer-detail .footer-title{
+      color: white;
+      margin-left: 30px;
+  }
+
+  .footer-detail .copyright1{
+    
+    margin-right: 40px;
+}
+
+.footer-detail .copyright2{
+    
+    margin-left: 55px;
+}
+
+   .copyright{
+      color: #D9DBE1;
+  }
+
+  
+  .social-icon{
+      margin-left: 50px;
+  }
+
+  .social-icon a{
+      color: wheat;
+      font-size: 30px;
+      margin-left: 3px;
+  }
 
  
 
