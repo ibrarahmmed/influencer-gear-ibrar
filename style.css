@@ -1,0 +1,100 @@
+/* Font Import  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-size: 50px;
+}
+
+
+
+
+/*========
+ Header part 
+ =========== */
+
+.container-full{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+ nav{
+     display: flex;
+     justify-content: space-between;
+     height: 80px;
+     align-items:center ;
+     margin-bottom: 10%;
+    
+ }
+
+ .navigation{
+     display: flex;
+
+ }
+
+ .navigation  li{
+     margin-right: 20px;
+     list-style-type: none;
+ }
+
+ .navigation li a{
+     text-decoration: none;
+     font-size: 16px;
+     color: black;
+     padding: 10px 10px;
+ }
+
+ /*==========
+  introduction
+  ========== */
+
+  .introduction{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-items: end
+  }
+
+ 
+.introduction-info{
+    margin-top: 60px;
+}
+ 
+
+  .introduction-title p{
+      margin-bottom: 20px;
+  }
+
+  .introduction-button a{
+
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 41px;
+
+  }
+
+  .introduction-button .fa-arrow-right{
+      margin-left: 10px;
+  }
+
+  #camera{
+    position: absolute;
+   
+}
+
+ 
+
